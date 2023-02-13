@@ -6,7 +6,7 @@ import re
 
 def screen(i):
 
-    path = f'fina2143adavery eye turn oil near j{i}.png'
+    path = f'fina2143{i}.png'
     pg.screenshot(path,region=(470,270 ,950, 100))
     return path
 def run():
