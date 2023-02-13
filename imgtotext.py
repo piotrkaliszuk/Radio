@@ -13,7 +13,7 @@ def run():
     i = 0
     while True:
 
-        x = (pytesseract.image_to_string(Image.open(screen(i)),lang='pol'tedy drzwi tak dla nikt dcie nagle dzie))
+        x = (pytesseract.image_to_string(Image.open(screen(i)),lang='pol'))
         y = re.sub(r'\n\s*\n', '\n', x, flags=re.MULTILINE)
         z = y.replace('\n',' ')
         pg.write(z, interval=0.01)
